@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tone JS</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/tone" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <button id="startButton">Start</button>
+    <button id="kickButton">Kick</button>
+    <button id="snareButton">Snare</button>
+    <button id="hatClosedButton">Hat Closed</button>
+    <button id="hatOpenButton">Hat Open</button>
+    <button id="bassButton">Bass</button>
+
+    <button id="melody1Button">M1</button>
+    <button id="melody2Button">M2</button>
+
+    <button class="Fx" id="fxPingPong">PingPong</button>
+    <button class="Fx" id="fxReverb">Reverb</button>
+    <button class="Fx" id="fxVibrato">Vibrato</button>
+    <button class="Fx" id="fxChorus">Chorus</button>
+
+    <div>
+      <label for="melody1Volume">M1</label>
+      <input type="range" id="melody1Volume" min="-40" max="6" step="1" value="-12" />
+    </div>
+    <div>
+      <label for="melody2Volume">M2</label>
+      <input type="range" id="melody2Volume" min="-40" max="6" step="1" value="-12" />
+    </div>
+    <div>
+      <label for="bassVolume">Bass</label>
+      <input type="range" id="bassVolume" min="-40" max="6" step="1" value="-10" />
+    </div>
+    <div>
+      <label for="kickVolume">Kick</label>
+      <input type="range" id="kickVolume" min="-40" max="6" step="1" value="-4" />
+    </div>
+    <div>
+      <label for="snareVolume">Snare</label>
+      <input type="range" id="snareVolume" min="-40" max="6" step="1" value="-6" />
+    </div>
+    <div>
+      <label for="hatClosedVolume">Hat Closed</label>
+      <input type="range" id="hatClosedVolume" min="-40" max="6" step="1" value="-8" />
+    </div>
+    <div>
+      <label for="hatOpenVolume">Hat Open</label>
+      <input type="range" id="hatOpenVolume" min="-40" max="6" step="1" value="-12" />
+    </div>
+  </body>
+</html>
